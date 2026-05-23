@@ -140,7 +140,7 @@ function Library:Notification(message, duration, color)
     NotifContainer.BackgroundTransparency = 1
     NotifContainer.BorderSizePixel = 0
     NotifContainer.ZIndex = 99999999
-    NotifContainer.Parent = Library.ScreenGUI
+    NotifContainer.Parent = Instance.new("ScreenGui", game.Players.LocalPlayer.PlayerGui)
 
     notification.Container = NotifContainer
 
